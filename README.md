@@ -1,7 +1,7 @@
 urmston-repair-cafe-website
 ===========================
 
-Static website for Urmston Repair Café. Hosted via Github Pages at TODO: insert domain.
+Static website for Urmston Repair Café. Hosted via GitHub Pages at TODO: insert domain.
 
 Made using [Bootstrap css](https://getbootstrap.com/).
 
