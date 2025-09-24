@@ -1,0 +1,41 @@
+:root {
+    /* Colours taken from inspecting the repaircafe.org website */
+    --rc-purple: #2d2e82;
+    --rc-pale: #e8e8ff;
+    --rc-orange: #ed6a42;
+    
+    --white: #ffffff;
+}
+
+/* Overwrite Bootstrap navbar colours */
+.navbar {
+    --bs-navbar-active-color: var(--rc-orange);
+}
+.navbar-nav {
+    --bs-nav-link-color: var(--white);
+    --bs-nav-link-hover-color: var(--rc-orange);
+}
+
+.nav-logo {
+    max-width: 200px;
+}
+
+.bg-rc-purple {
+    background-color: var(--rc-purple);
+}
+
+.bg-rc-pale {
+    background-color: var(--rc-pale);
+}
+
+.text-rc-purple {
+    color: var(--rc-purple);
+}
+
+.photo {
+    max-height: 400px;
+}
+
+a {
+    color: var(--rc-orange);
+}

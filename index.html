@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Urmston Repair Café</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="/style.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/favicon.png">
+  </head>
+  
+  <body class="bg-rc-pale text-rc-purple vh-100">
+
+    <nav class="navbar navbar-expand bg-rc-purple">
+      <!-- 
+        Flex shenanigans to get the Repair Café logo to appear above the navbar on small screens.
+        Done this way because Bootstrap navbars have an implicit grid layout, and trying to create
+        our own layout with rows and cols causes havoc.
+      -->
+      <div class="container flex-column-reverse flex-sm-row">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/calendar">Calendar</a>
+          </li>
+        </ul>
+        <a class="float-sm-end" href="https://www.repaircafe.org/en/">
+          <img class="nav-logo" src="/repair-cafe-logo.png" alt="Repair Café logo">
+        </a>
+      </div>
+    </nav>
+
+    <div class="container py-4">
+      <h1>Urmston Repair Café</h1>
+
+      <img class="img-fluid photo pb-2" src="/photo.jpg" alt="A team of volunteers taking apart a kettle and a hairdryer">
+      
+      <h2>What?</h2>
+      <p>Repair Cafés are all about repairing things, with the goal to prevent throwing them away unnecessarily. At Urmston Repair Café we have a friendly team of volunteers who want to help fix your broken items. Bring them along to one of our events and we'll do our best to get them working again. We'll have a go at anything you bring in, but the things we specialise in are:</p>
+      <ul>
+        <li>Electrical appliances</li>
+        <li>Computers</li>
+        <li>Toys</li>
+        <li>Tool and knife sharpening</li>
+      </ul>
+      <p>You can learn more about the global network of Repair Cafés on <a href="https://www.repaircafe.org/en/">their website</a>. A list of other Repair Cafés around Manchester can be found <a href="https://repaircafesgm.org.uk/">here</a>.</p>
+      
+      <h2>When?</h2>
+      <p>We aim to run on the second Sunday of every month, from 9:30am until 11:30am. Please check our <a href="/calendar">calendar</a> to confirm an event is taking place before travelling.</p>
+      
+      <h2>Where?</h2>
+      <p> Our events are hosted by local independent business <a href="https://www.goodnesszerowaste.co.uk">Goodness Zero Waste</a>. You can find them on Google Maps <a href="https://maps.app.goo.gl/HP7SWM9jPjHtBVyCA">here</a>. The address is:</p>
+      <address>
+        10 Crofts Bank Rd<br>
+        Urmston<br>
+        Manchester<br>
+        M41 0TS
+      </address>
+
+      <h2>Contact</h2>
+      <p>Get in touch at <a href="mailto:urmstonrepaircafe@gmail.com">urmstonrepaircafe@gmail.com</a>.</p>
+
+    </div>
+  </body>
+</html>
