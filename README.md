@@ -7,4 +7,4 @@ Made using [Jekyll](https://jekyllrb.com/) and [Bootstrap css](https://getbootst
 
 ## Running locally
 
-To test locally you need to run using Jekyll's server. A script to do this via docker is available at `run-local-server.sh`.
+To test locally you need to run using Jekyll's server. A script to do this via docker is available at `run-local-server.sh`. After running the site will be available at http://localhost:4000.
