@@ -1,7 +1,7 @@
 async function loadSVGAndPopulateFields() {
     try {
         // Fetch the SVG file
-        const response = await fetch('poster.svg');
+        const response = await fetch('poster.v2.svg');
         const svgText = await response.text();
 
         // Remove the font-face definition from SVG to avoid conflicts
@@ -47,6 +47,15 @@ async function loadSVGAndPopulateFields() {
             if (bottomTexts.length >= 3) {
                 // Combine remaining text for venue details
                 document.getElementById('details-field').value = bottomTexts.slice(2).join('\n');
+            }
+        }
+
+        // Extract next one date
+        const nextOne = svgContainer.querySelector('#next-one');
+        if (nextOne) {
+            const nextDateEl = nextOne.querySelector('#text-next-date');
+            if (nextDateEl) {
+                document.getElementById('next-date-field').value = nextDateEl.textContent.trim();
             }
         }
 
@@ -128,6 +137,13 @@ function setupSVGUpdateListeners() {
                     textEl.textContent = '';
                 }
             });
+        }
+    });
+    // Update next one date
+    document.getElementById('next-date-field').addEventListener('input', function() {
+        const nextDateElement = svgContainer.querySelector('#text-next-date');
+        if (nextDateElement) {
+            nextDateElement.textContent = this.value;
         }
     });
 }
